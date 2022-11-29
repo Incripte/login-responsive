@@ -40,6 +40,8 @@ section#login {
     border-radius: 10px;
     overflow: hidden;
     transform: translate(-50%, -50%);
+    transition: width .5s, height .5s;
+    transition-timing-function: ease;
 }
 
 section#login div.formulario {
@@ -148,31 +150,126 @@ span#mood {
         width: 100vw;
     }
 
-    section#login div.imagem {
-        background: black url(../imagens/login-rsp.jpg);
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 600px;
-        width: 150px;
-    
-    }
-    
     section#login {
-        background-color: white;
-        display: block;
-        height: 300px;
-        width: 400px;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        border-radius: 10px;
-        overflow: hidden;
-        transform: translate(-50%, -50%);
+        height: 400px;
+        width: 400px; 
+    }
+
+    section#login div.imagem {
+        float: left;
+        height: 400px;
+        width: 30%;
+        margin-right: 20px;
+    
     }
     
+    section#login h1 {
+        float: center;
+        margin: 5px;
+        color: rgba(71, 222, 255, 1);
+    }
+    
+    section#login p {
+        float: center;
+        color: rgba(129, 129, 129, 1);
+    }
+
+    form div#campo {
+        display: flex;
+        margin-top: 20px;
+        float: center;
+        align-items: center;
+        width: 240px;
+    }
+    
+    button {
+        display: block;
+        float: left;
+        left: 25%;
+        width: 50%;
+        height: 30px;
+        margin: 30px;
+    }
+
+    div#esqueci {
+        display: flex;
+        float: center;
+        width: 200px;
+        font-size: 0.8em;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    span#mood {
+        display: inline-block;
+        color: #9eeafc;
+        margin-left: 5px;
+    }
 }
 
 @media screen and (min-width: 992px) {
+    body, html {
+        background: linear-gradient(180deg, #47DEFF 0%, #B9F2FF 100%);
+        height: 100vh;
+        width: 100vw;
+    }
+
+    section#login {
+        height: 400px;
+        width: 600px;
+    }
+
+    section#login div.imagem {
+        display: block;
+        margin-right: 30px;
+        float: left;
+        height: 400px;
+        width: 50%;
+        
+    }
+
+    section#login h1 {
+        float: center;
+        margin: 5px;
+        color: rgba(71, 222, 255, 1);
+    }
     
+    section#login p {
+        float: center;
+        color: rgba(129, 129, 129, 1);
+    }
+
+    form div#campo {
+        display: flex;
+        margin-top: 20px;
+        float: center;
+        align-items: center;
+        width: 250px;
+    }
+    
+    button {
+        display: block;
+        float: left;
+        left: 18%;
+        width: 30%;
+        height: 30px;
+        margin: 30px;
+    }
+
+    div#esqueci {
+        display: flex;
+        float: center;
+        width: 200px;
+        font-size: 0.8em;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    span#mood {
+        display: inline-block;
+        color: #9eeafc;
+        margin-left: 5px;
+    }
 }
